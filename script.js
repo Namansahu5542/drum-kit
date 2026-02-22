@@ -8,7 +8,7 @@ function drum() {
             ele.classList.add("effect");
             setInterval(() => {
                 ele.classList.remove("effect");
-            }, 250);
+            }, 200);
             a1.currentTime = 0;
             a1.play();
 
