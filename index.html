@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum-kit</title>
+    <link rel="icon" type="image/png" href="beats/drum logo.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <main class="drum-boxes">
+            <div class="grid-one">
+                <div data-key="65" class="box A p1">A</div>
+                <div data-key="66" class="box B p1">B</div>
+                <div data-key="67" class="box C p1">C</div>
+                <div data-key="68" class="box D p1">D</div>
+            </div>
+            <div class="grid-two">
+                <div data-key="69" class="box E p2">E</div>
+                <div data-key="32" class="box F p2">Space</div>
+                <div data-key="71" class="box G p2">G</div>
+            </div>
+            <div class="grid-three">
+                <div data-key="72" class="box H p3">H</div>
+                <div data-key="73" class="box I p3">I</div>
+            </div>
+
+        </main>
+        <audio data-key="65"  src="beats/bamboo-hit-stick.wav"></audio>
+        <audio data-key="66"  src="beats/drum-sticks-2_1bpm_E_minor.wav"></audio>
+        <audio data-key="67"  src="beats/drums-one-shot-sticks_99bpm_C.wav"></audio>
+        <audio data-key="68"  src="beats/mixkit-joke-drums-578.wav"></audio>
+        <audio data-key="69"  src="beats/soundreality-kick-drum-acoustic-sample-455285.mp3"></audio>
+        <audio data-key="32"  src="beats/ba-dum-tss-drum-sting-fernweh-goldfish-slow-2-00-02.mp3"></audio>
+        <audio data-key="71"  src="beats/stick-hit.mp3"></audio>
+        <audio data-key="72"  src="beats/side-stick-wood-drum_140bpm_D_minor.wav"></audio>
+        <audio data-key="73"  src="beats/boom-spacious-djembe-hit-tomas-herudek-1-1-00-08.mp3"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html> 

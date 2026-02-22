@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg,
+            #ff4e50,
+            /* energetic red */
+            #f9d423,
+            /* bright yellow */
+            #24c6dc,
+            /* cool cyan */
+            #5433ff,
+            /* deep purple */
+            #20bdff,
+            /* electric blue */
+            #a5fecb
+            /* soft green */
+        );
+    background-size: 400% 400%;
+    animation: musicGradient 8s ease infinite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes musicGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.drum-boxes {
+    height: 50%;
+    width: 80%;
+    margin: auto;
+    position: relative;
+
+
+}
+
+.box {
+    /* height: 80px;
+    width: 80px; */
+    z-index: 10;
+    border-radius: 5px;
+    transition: all 10ms linear 0s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    font-size: x-large;
+    color: #a5fecb;
+    background: linear-gradient(135deg,
+            #ff4e5197,
+            /* energetic red */
+            #f9d52393,
+            /* bright yellow */
+            #24c7dc85,
+            /* cool cyan */
+            #5533ff8b,
+            /* deep purple */
+            #20bcff8c,
+            /* electric blue */
+            #a5fecc9d
+            /* soft green */
+        );
+    background-size: 400% 400%;
+    animation: musicGradient 8s ease infinite;
+
+}
+
+.box:hover {
+    /* scale: 1.05; */
+    box-shadow: 1px 1px 10px 1px rgb(255, 242, 0);
+}
+
+.grid-one {
+    width: 80%;
+    height: 33%;
+
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 1fr;
+
+
+}
+
+.grid-two {
+    width: 60%;
+    height: 33%;
+
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: 1fr;
+    padding-top: 1rem;
+}
+
+.grid-three {
+    width: 40%;
+    height: 33%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 1fr;
+    padding-top: 1rem;
+}
+
+.p1 {
+    margin: 1.5rem;
+
+}
+
+.p2 {
+    margin: 1.5rem;
+}
+
+.p3 {
+    margin: 2rem;
+}
+
+.A {
+    grid-column: 1/2;
+    grid-row: 1/2;
+background-color: #ffffff5a;
+}
+
+.B {
+    grid-column: 2/3;
+    grid-row: 1/2;
+background-color: #ffffff5a;
+}
+
+.C {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  background-color: #ffffff5a;
+}
+
+.D {
+    grid-column: 4/5;
+    grid-row: 1/2;
+ background-color: #ffffff5a;
+}
+
+.E {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #ffffff5a;
+}
+
+.F {
+    grid-column: 2/3;
+    grid-row: 1/2;
+   background-color: #ffffff5a;
+}
+
+.G {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: #ffffff5a;
+}
+
+.H {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #ffffff5a;
+}
+
+.I {
+    grid-column: 2/3;
+    grid-row: 1/2;
+     background-color: #ffffff5a;
+}
+
+.effect {
+    transition: all 10ms linear 0s;
+    scale: 1.05;
+    box-shadow: 1px 1px 10px 1px rgb(255, 242, 0);
+}
+/* Tablet screens */
+@media (max-width: 768px) {
+  .drum-boxes {
+    width: 95%;
+    height: auto;
+  }
+
+  .grid-one,
+  .grid-two,
+  .grid-three {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    padding-top: 0.5rem;
+  }
+
+  .box {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 480px) {
+  .drum-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .grid-one,
+  .grid-two,
+  .grid-three {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .box {
+    width: 80%;
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
